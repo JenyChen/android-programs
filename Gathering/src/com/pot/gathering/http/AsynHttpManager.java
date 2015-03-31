@@ -5,6 +5,7 @@ import org.apache.http.HttpEntity;
 import android.content.Context;
 
 import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.loopj.android.http.ResponseHandlerInterface;
 
@@ -28,5 +29,9 @@ public class AsynHttpManager {
 	
 	public void post(Context context, String url, HttpEntity entity, ResponseHandlerInterface responseHandler){
 		httpClient.post(context, url, entity, "application/json", responseHandler);
+	}
+	
+	public void get(Context context, String url, RequestParams params, AsyncHttpResponseHandler responseHandler){
+		httpClient.get(context, url, params, responseHandler);
 	}
 }
