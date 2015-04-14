@@ -104,6 +104,8 @@ public final class R {
         public static final int female=0x7f06000e;
         public static final int hello_world=0x7f060001;
         public static final int login=0x7f060004;
+        public static final int login_failed=0x7f060012;
+        public static final int login_success=0x7f060011;
         public static final int male=0x7f06000d;
         public static final int name=0x7f060008;
         public static final int nick=0x7f060009;

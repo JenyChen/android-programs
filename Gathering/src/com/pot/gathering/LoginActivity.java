@@ -1,7 +1,6 @@
 package com.pot.gathering;
 
 import org.apache.http.Header;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -14,7 +13,6 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.pot.gathering.config.Config;
@@ -154,18 +152,19 @@ public class LoginActivity extends BaseActivity implements OnCheckedChangeListen
 		String birth = textRegistBirth.getText().toString();
 		RequestParams params = new RequestParams();
 		params.put("name", name);
-		params.put("nick", nick);
-		params.put("phoneNum", phoneNum);
+		params.put("nickName", nick);
+		params.put("phonenum", phoneNum);
 		params.put("password", password);
-		params.put("birth", birth);
+		params.put("birthday", birth);
+		params.put("imagePaht", "");
 		params.put("sex", mSex);
-		AsynHttpManager.getInstance().post(Config.URL, params, new AsyncHttpResponseHandler() {
+		AsynHttpManager.getInstance().post(Config.URL+Config.REGIST, params, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
 				// TODO Auto-generated method stub
 				String result = new String(arg2);
-				if(result.equals("0")){
+				if(result.equals(Config.SUCCESS)){
 					mDrawerLayout.closeDrawers();
 					clearRegistData();
 				}
@@ -185,25 +184,25 @@ public class LoginActivity extends BaseActivity implements OnCheckedChangeListen
 		String phoneNum = edtPhoneNum.getText().toString();
 		String password = edtPwd.getText().toString();
 		RequestParams params = new RequestParams();
-		params.put("phoneNum", phoneNum);
+		params.put("phonenum", phoneNum);
 		params.put("password", password);
-		AsynHttpManager.getInstance().post(Config.URL, params, new AsyncHttpResponseHandler() {
+		AsynHttpManager.getInstance().post(Config.URL+Config.LOGIN, params, new AsyncHttpResponseHandler() {
 			
 			@Override
 			public void onSuccess(int arg0, Header[] arg1, byte[] arg2) {
 				// TODO Auto-generated method stub
 				String result = new String(arg2);
-				if(result.equals("0")){
-					Toast.makeText(LoginActivity.this, "登录成功！", Toast.LENGTH_LONG).show();
+				if(result.equals(Config.SUCCESS)){
+					Toast.makeText(LoginActivity.this, R.string.login_success, Toast.LENGTH_LONG).show();
 				}else{
-					Toast.makeText(LoginActivity.this, "登录失败！", Toast.LENGTH_LONG).show();
+					Toast.makeText(LoginActivity.this, R.string.login_failed, Toast.LENGTH_LONG).show();
 				}
 			}
 			
 			@Override
 			public void onFailure(int arg0, Header[] arg1, byte[] arg2, Throwable arg3) {
 				// TODO Auto-generated method stub
-				Toast.makeText(LoginActivity.this, "登录失败！", Toast.LENGTH_LONG).show();
+				Toast.makeText(LoginActivity.this, R.string.login_failed, Toast.LENGTH_LONG).show();
 			}
 		});
 	}
