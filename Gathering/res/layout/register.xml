@@ -134,11 +134,13 @@
 	        android:drawableLeft="@drawable/user_icon"
         	android:drawablePadding="@dimen/dp5"
 	        android:hint="@string/sex"/>
-  	    <RadioGroup 
+  	    <RadioGroup
+  	        android:id="@+id/rdg_sex" 
   	        android:layout_width="wrap_content"
   	        android:layout_height="wrap_content"
   	        android:orientation="horizontal">
   	        <RadioButton 
+  	            android:id="@+id/rdb_male"
   	            android:layout_width="wrap_content"
   	            android:layout_height="wrap_content"
   	            android:textColor="@color/black"
@@ -146,6 +148,7 @@
   	            android:text="@string/male"
   	            android:checked="true"/>
   	        <RadioButton 
+  	            android:id="@+id/rdb_female"
   	            android:layout_width="wrap_content"
   	            android:layout_height="wrap_content"
   	            android:textColor="@color/black"
@@ -173,7 +176,10 @@
   	        android:textSize="@dimen/middlesize"
   	        android:text="@string/cancel"
   	        android:gravity="center"
-  	        android:padding="@dimen/dp10"
+  	        android:paddingLeft="@dimen/dp10"
+  	        android:paddingRight="@dimen/dp10"
+  	        android:paddingTop="@dimen/dp5"
+  	        android:paddingBottom="@dimen/dp5"
   	        android:layout_marginRight="@dimen/dp5"
   	        android:background="@drawable/selector_bt"/>
   	    
@@ -186,7 +192,10 @@
   	        android:textSize="@dimen/middlesize"
   	        android:text="@string/sure"
   	        android:gravity="center"
-  	        android:padding="@dimen/dp10"
+  	        android:paddingLeft="@dimen/dp10"
+  	        android:paddingRight="@dimen/dp10"
+  	        android:paddingTop="@dimen/dp5"
+  	        android:paddingBottom="@dimen/dp5"
   	        android:layout_marginLeft="@dimen/dp5"
   	        android:background="@drawable/selector_bt"/>
   	</LinearLayout>

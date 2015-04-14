@@ -64,27 +64,29 @@ public final class R {
         public static final int user_img_set=0x7f020014;
     }
     public static final class id {
-        public static final int action_settings=0x7f090014;
-        public static final int btn2=0x7f090007;
-        public static final int btn3=0x7f090006;
+        public static final int action_settings=0x7f090016;
         public static final int content_frame=0x7f090001;
         public static final int drawer_layout=0x7f090000;
         public static final int edt_password=0x7f090004;
         public static final int edt_phonenum=0x7f090003;
-        public static final int edt_register_name=0x7f090008;
-        public static final int edt_register_nick=0x7f090009;
-        public static final int edt_register_phonenum=0x7f09000a;
-        public static final int edt_register_pwd=0x7f09000b;
-        public static final int edt_register_pwd_agin=0x7f09000c;
-        public static final int img_back=0x7f090013;
-        public static final int layout_back=0x7f090012;
-        public static final int layout_regist=0x7f090005;
-        public static final int layout_sex=0x7f09000e;
+        public static final int edt_register_name=0x7f090007;
+        public static final int edt_register_nick=0x7f090008;
+        public static final int edt_register_phonenum=0x7f090009;
+        public static final int edt_register_pwd=0x7f09000a;
+        public static final int edt_register_pwd_agin=0x7f09000b;
+        public static final int img_back=0x7f090015;
+        public static final int layout_back=0x7f090014;
+        public static final int layout_regist=0x7f090006;
+        public static final int layout_sex=0x7f09000d;
         public static final int layout_title=0x7f090002;
-        public static final int text_cancel=0x7f090010;
-        public static final int text_register_birth=0x7f09000d;
-        public static final int text_register_sex=0x7f09000f;
-        public static final int text_sure=0x7f090011;
+        public static final int rdb_female=0x7f090011;
+        public static final int rdb_male=0x7f090010;
+        public static final int rdg_sex=0x7f09000f;
+        public static final int text_cancel=0x7f090012;
+        public static final int text_login=0x7f090005;
+        public static final int text_register_birth=0x7f09000c;
+        public static final int text_register_sex=0x7f09000e;
+        public static final int text_sure=0x7f090013;
     }
     public static final class layout {
         public static final int login=0x7f030000;

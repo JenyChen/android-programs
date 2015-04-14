@@ -7,7 +7,6 @@ import android.content.Context;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-import com.loopj.android.http.ResponseHandlerInterface;
 
 
 public class AsynHttpManager {
@@ -23,11 +22,11 @@ public class AsynHttpManager {
 		return mAsynHttpManager;
 	}
 	
-	public void post(String url, RequestParams params, ResponseHandlerInterface responseHandler){
+	public void post(String url, RequestParams params, AsyncHttpResponseHandler responseHandler){
 		httpClient.post(url, params, responseHandler);
 	}
 	
-	public void post(Context context, String url, HttpEntity entity, ResponseHandlerInterface responseHandler){
+	public void post(Context context, String url, HttpEntity entity, AsyncHttpResponseHandler responseHandler){
 		httpClient.post(context, url, entity, "application/json", responseHandler);
 	}
 	
