@@ -1,7 +1,8 @@
-package com.pot.gathering;
+package com.pot.gathering.activitys;
 
 import org.apache.http.Header;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
@@ -15,6 +16,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.pot.gathering.BaseActivity;
+import com.pot.gathering.R;
+import com.pot.gathering.R.id;
+import com.pot.gathering.R.layout;
+import com.pot.gathering.R.string;
 import com.pot.gathering.config.Config;
 import com.pot.gathering.http.AsynHttpManager;
 
@@ -97,7 +103,9 @@ public class LoginActivity extends BaseActivity implements OnCheckedChangeListen
 		super.onClick(v);
 		switch (v.getId()) {
 		case R.id.text_login:// 登录
-			loginData();
+//			loginData();
+			Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+			startActivity(intent);
 			break;
 		case R.id.text_register_birth:// 出生日期
 			break;

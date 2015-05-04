@@ -6,4 +6,12 @@
     <color name="grey_bg">#d3d2d8</color>
     <color name="red">#f11730</color>
     <color name="pink">#ff00ff</color>
+    
+    <color name="invite_bg_color">#7d78f0</color>
+    <color name="ceng_bg_color">#b743e4</color>
+    <color name="contacts_bg_color">#199df2</color>
+    <color name="message_bg_color">#f64615</color>
+    <color name="message_count_color">#464acb</color>
+    <color name="other_bg_color">#10880d</color>
+    <color name="shadow">#c9b1c6</color>
 </resources>
