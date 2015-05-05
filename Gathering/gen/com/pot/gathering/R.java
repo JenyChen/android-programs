@@ -9,19 +9,95 @@ package com.pot.gathering;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_color=0x7f010005;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_width=0x7f010004;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+         */
+        public static final int childSize=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dividerWidth=0x7f010008;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+         */
+        public static final int fromDegrees=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int leftHolderWidth=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundHeight=0x7f010007;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int roundWidth=0x7f010006;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+         */
+        public static final int toDegrees=0x7f010001;
     }
     public static final class color {
         public static final int black=0x7f040002;
-        public static final int ceng_bg_color=0x7f040007;
-        public static final int contacts_bg_color=0x7f040008;
+        public static final int ceng_bg_color=0x7f040006;
+        public static final int contacts_bg_color=0x7f040007;
         public static final int grey_bg=0x7f040003;
-        public static final int invite_bg_color=0x7f040006;
-        public static final int message_bg_color=0x7f040009;
-        public static final int message_count_color=0x7f04000a;
-        public static final int other_bg_color=0x7f04000b;
-        public static final int pink=0x7f040005;
+        public static final int invite_bg_color=0x7f040005;
+        public static final int message_bg_color=0x7f040008;
+        public static final int message_count_color=0x7f040009;
+        public static final int other_bg_color=0x7f04000a;
+        public static final int pink=0x7f04000c;
         public static final int red=0x7f040004;
-        public static final int shadow=0x7f04000c;
+        public static final int shadow=0x7f04000b;
         public static final int transparent=0x7f040000;
         public static final int white=0x7f040001;
     }
@@ -44,6 +120,7 @@ public final class R {
         public static final int dp30=0x7f05000d;
         public static final int dp5=0x7f050009;
         public static final int dp50=0x7f05000e;
+        public static final int gridviewitem=0x7f05000f;
         public static final int maxsize=0x7f050002;
         public static final int middlesize=0x7f050003;
         public static final int minsize=0x7f050004;
@@ -60,79 +137,96 @@ public final class R {
         public static final int hand_error=0x7f020007;
         public static final int ic_launcher=0x7f020008;
         public static final int info_bg=0x7f020009;
-        public static final int main_notify=0x7f02000a;
-        public static final int orders_manage_icon=0x7f02000b;
-        public static final int paper__title_bg=0x7f02000c;
-        public static final int phone_img=0x7f02000d;
-        public static final int phone_title_bg=0x7f02000e;
-        public static final int pwd_img=0x7f02000f;
-        public static final int register_bt_bg=0x7f020010;
-        public static final int selector_bt=0x7f020011;
-        public static final int selector_edittext=0x7f020012;
-        public static final int shadow_ceng=0x7f020013;
-        public static final int shadow_contact=0x7f020014;
-        public static final int shadow_invite=0x7f020015;
-        public static final int shadow_message=0x7f020016;
-        public static final int shadow_other=0x7f020017;
-        public static final int title=0x7f020018;
-        public static final int user_icon=0x7f020019;
-        public static final int user_img_set=0x7f02001a;
+        public static final int invite_bg=0x7f02000a;
+        public static final int main_notify=0x7f02000b;
+        public static final int orders_manage_icon=0x7f02000c;
+        public static final int paper__title_bg=0x7f02000d;
+        public static final int paper_bg=0x7f02000e;
+        public static final int phone_img=0x7f02000f;
+        public static final int phone_title_bg=0x7f020010;
+        public static final int pwd_img=0x7f020011;
+        public static final int register_bt_bg=0x7f020012;
+        public static final int selector_bt=0x7f020013;
+        public static final int selector_edittext=0x7f020014;
+        public static final int shadow_ceng=0x7f020015;
+        public static final int shadow_circle=0x7f020016;
+        public static final int shadow_contact=0x7f020017;
+        public static final int shadow_invite=0x7f020018;
+        public static final int shadow_message=0x7f020019;
+        public static final int shadow_other=0x7f02001a;
+        public static final int title=0x7f02001b;
+        public static final int user_icon=0x7f02001c;
+        public static final int user_img_set=0x7f02001d;
     }
     public static final class id {
-        public static final int action_settings=0x7f090023;
-        public static final int content_frame=0x7f090001;
-        public static final int drawer_layout=0x7f090000;
-        public static final int edt_password=0x7f090004;
-        public static final int edt_phonenum=0x7f090003;
-        public static final int edt_register_name=0x7f090014;
-        public static final int edt_register_nick=0x7f090015;
-        public static final int edt_register_phonenum=0x7f090016;
-        public static final int edt_register_pwd=0x7f090017;
-        public static final int edt_register_pwd_agin=0x7f090018;
-        public static final int img_back=0x7f090022;
-        public static final int layout_back=0x7f090021;
-        public static final int layout_ceng=0x7f09000b;
-        public static final int layout_contact=0x7f09000d;
-        public static final int layout_invite=0x7f090009;
-        public static final int layout_message=0x7f09000f;
-        public static final int layout_notify=0x7f090007;
-        public static final int layout_other=0x7f090012;
-        public static final int layout_regist=0x7f090006;
-        public static final int layout_sex=0x7f09001a;
-        public static final int layout_title=0x7f090002;
-        public static final int rdb_female=0x7f09001e;
-        public static final int rdb_male=0x7f09001d;
-        public static final int rdg_sex=0x7f09001c;
-        public static final int text_cancel=0x7f09001f;
-        public static final int text_ceng=0x7f09000c;
-        public static final int text_contact=0x7f09000e;
-        public static final int text_invite=0x7f09000a;
-        public static final int text_login=0x7f090005;
-        public static final int text_message=0x7f090010;
-        public static final int text_msg_count=0x7f090011;
-        public static final int text_notify=0x7f090008;
-        public static final int text_other=0x7f090013;
-        public static final int text_register_birth=0x7f090019;
-        public static final int text_register_sex=0x7f09001b;
-        public static final int text_sure=0x7f090020;
+        public static final int action_settings=0x7f09002c;
+        public static final int content_frame=0x7f090008;
+        public static final int drawer_layout=0x7f090007;
+        public static final int edt_address=0x7f090003;
+        public static final int edt_password=0x7f09000b;
+        public static final int edt_phonenum=0x7f09000a;
+        public static final int edt_register_name=0x7f09001b;
+        public static final int edt_register_nick=0x7f09001c;
+        public static final int edt_register_phonenum=0x7f09001d;
+        public static final int edt_register_pwd=0x7f09001e;
+        public static final int edt_register_pwd_agin=0x7f09001f;
+        public static final int grid_game=0x7f090004;
+        public static final int grid_invite=0x7f090001;
+        public static final int grid_theme=0x7f090002;
+        public static final int img_add=0x7f090000;
+        public static final int img_back=0x7f09002a;
+        public static final int img_head=0x7f090005;
+        public static final int layout_back=0x7f090029;
+        public static final int layout_ceng=0x7f090012;
+        public static final int layout_contact=0x7f090014;
+        public static final int layout_invite=0x7f090010;
+        public static final int layout_message=0x7f090016;
+        public static final int layout_notify=0x7f09000e;
+        public static final int layout_other=0x7f090019;
+        public static final int layout_regist=0x7f09000d;
+        public static final int layout_sex=0x7f090021;
+        public static final int layout_title=0x7f090009;
+        public static final int rdb_female=0x7f090025;
+        public static final int rdb_male=0x7f090024;
+        public static final int rdg_sex=0x7f090023;
+        public static final int text_cancel=0x7f090026;
+        public static final int text_ceng=0x7f090013;
+        public static final int text_contact=0x7f090015;
+        public static final int text_invite=0x7f090011;
+        public static final int text_login=0x7f09000c;
+        public static final int text_message=0x7f090017;
+        public static final int text_msg_count=0x7f090018;
+        public static final int text_name=0x7f090006;
+        public static final int text_notify=0x7f09000f;
+        public static final int text_other=0x7f09001a;
+        public static final int text_register_birth=0x7f090020;
+        public static final int text_register_sex=0x7f090022;
+        public static final int text_sure=0x7f090027;
+        public static final int text_title=0x7f090028;
+        public static final int text_title_left=0x7f09002b;
     }
     public static final class layout {
-        public static final int login=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int register=0x7f030002;
-        public static final int title=0x7f030003;
+        public static final int invite=0x7f030000;
+        public static final int invite_item=0x7f030001;
+        public static final int login=0x7f030002;
+        public static final int main=0x7f030003;
+        public static final int register=0x7f030004;
+        public static final int title=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
+        public static final int address=0x7f060019;
+        public static final int address_edit=0x7f06001a;
         public static final int app_name=0x7f060000;
         public static final int back=0x7f060010;
         public static final int cancel=0x7f06000c;
         public static final int ceng=0x7f060014;
         public static final int contact=0x7f060015;
         public static final int female=0x7f06000e;
+        public static final int game=0x7f06001b;
         public static final int hello_world=0x7f060001;
         public static final int invite=0x7f060013;
         public static final int login=0x7f060004;
@@ -149,19 +243,11 @@ public final class R {
         public static final int register=0x7f060005;
         public static final int sex=0x7f06000b;
         public static final int sure=0x7f06000f;
+        public static final int theme=0x7f060018;
         public static final int title_name=0x7f060003;
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -174,9 +260,287 @@ public final class R {
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f070001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a ArcLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ArcLayout_childSize com.pot.gathering:childSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #ArcLayout_fromDegrees com.pot.gathering:fromDegrees}</code></td><td></td></tr>
+           <tr><td><code>{@link #ArcLayout_toDegrees com.pot.gathering:toDegrees}</code></td><td></td></tr>
+           </table>
+           @see #ArcLayout_childSize
+           @see #ArcLayout_fromDegrees
+           @see #ArcLayout_toDegrees
+         */
+        public static final int[] ArcLayout = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#childSize}
+          attribute's value can be found in the {@link #ArcLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.pot.gathering:childSize
+        */
+        public static final int ArcLayout_childSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#fromDegrees}
+          attribute's value can be found in the {@link #ArcLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+          @attr name com.pot.gathering:fromDegrees
+        */
+        public static final int ArcLayout_fromDegrees = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#toDegrees}
+          attribute's value can be found in the {@link #ArcLayout} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+          @attr name com.pot.gathering:toDegrees
+        */
+        public static final int ArcLayout_toDegrees = 1;
+        /** Attributes that can be used with a ArcMenu.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #ArcMenu_childSize com.pot.gathering:childSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #ArcMenu_fromDegrees com.pot.gathering:fromDegrees}</code></td><td></td></tr>
+           <tr><td><code>{@link #ArcMenu_toDegrees com.pot.gathering:toDegrees}</code></td><td></td></tr>
+           </table>
+           @see #ArcMenu_childSize
+           @see #ArcMenu_fromDegrees
+           @see #ArcMenu_toDegrees
+         */
+        public static final int[] ArcMenu = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#childSize}
+          attribute's value can be found in the {@link #ArcMenu} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+          @attr name com.pot.gathering:childSize
+        */
+        public static final int ArcMenu_childSize = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#fromDegrees}
+          attribute's value can be found in the {@link #ArcMenu} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+          @attr name com.pot.gathering:fromDegrees
+        */
+        public static final int ArcMenu_fromDegrees = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#toDegrees}
+          attribute's value can be found in the {@link #ArcMenu} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+          @attr name com.pot.gathering:toDegrees
+        */
+        public static final int ArcMenu_toDegrees = 1;
+        /** Attributes that can be used with a CircleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_border_color com.pot.gathering:border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_border_width com.pot.gathering:border_width}</code></td><td></td></tr>
+           </table>
+           @see #CircleImageView_border_color
+           @see #CircleImageView_border_width
+         */
+        public static final int[] CircleImageView = {
+            0x7f010004, 0x7f010005
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#border_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.pot.gathering:border_color
+        */
+        public static final int CircleImageView_border_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#border_width}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.pot.gathering:border_width
+        */
+        public static final int CircleImageView_border_width = 0;
+        /**   Defines the custom XML attributes supported for a HorizontalListView 
+  
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #HorizontalListView_android_divider android:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #HorizontalListView_android_fadingEdgeLength android:fadingEdgeLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #HorizontalListView_android_requiresFadingEdge android:requiresFadingEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #HorizontalListView_dividerWidth com.pot.gathering:dividerWidth}</code></td><td></td></tr>
+           </table>
+           @see #HorizontalListView_android_divider
+           @see #HorizontalListView_android_fadingEdgeLength
+           @see #HorizontalListView_android_requiresFadingEdge
+           @see #HorizontalListView_dividerWidth
+         */
+        public static final int[] HorizontalListView = {
+            0x010100e0, 0x01010129, 0x010103a5, 0x7f010008
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#divider}
+          attribute's value can be found in the {@link #HorizontalListView} array.
+          @attr name android:divider
+        */
+        public static final int HorizontalListView_android_divider = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#fadingEdgeLength}
+          attribute's value can be found in the {@link #HorizontalListView} array.
+          @attr name android:fadingEdgeLength
+        */
+        public static final int HorizontalListView_android_fadingEdgeLength = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#requiresFadingEdge}
+          attribute's value can be found in the {@link #HorizontalListView} array.
+          @attr name android:requiresFadingEdge
+        */
+        public static final int HorizontalListView_android_requiresFadingEdge = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#dividerWidth}
+          attribute's value can be found in the {@link #HorizontalListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.pot.gathering:dividerWidth
+        */
+        public static final int HorizontalListView_dividerWidth = 3;
+        /** Attributes that can be used with a RayLayout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RayLayout_leftHolderWidth com.pot.gathering:leftHolderWidth}</code></td><td></td></tr>
+           </table>
+           @see #RayLayout_leftHolderWidth
+         */
+        public static final int[] RayLayout = {
+            0x7f010003
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#leftHolderWidth}
+          attribute's value can be found in the {@link #RayLayout} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.pot.gathering:leftHolderWidth
+        */
+        public static final int RayLayout_leftHolderWidth = 0;
+        /** Attributes that can be used with a RoundAngleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RoundAngleImageView_roundHeight com.pot.gathering:roundHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundAngleImageView_roundWidth com.pot.gathering:roundWidth}</code></td><td></td></tr>
+           </table>
+           @see #RoundAngleImageView_roundHeight
+           @see #RoundAngleImageView_roundWidth
+         */
+        public static final int[] RoundAngleImageView = {
+            0x7f010006, 0x7f010007
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#roundHeight}
+          attribute's value can be found in the {@link #RoundAngleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.pot.gathering:roundHeight
+        */
+        public static final int RoundAngleImageView_roundHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.pot.gathering.R.attr#roundWidth}
+          attribute's value can be found in the {@link #RoundAngleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.pot.gathering:roundWidth
+        */
+        public static final int RoundAngleImageView_roundWidth = 0;
+    };
 }

@@ -1,5 +1,6 @@
 package com.pot.gathering.activitys;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -70,6 +71,8 @@ public class MainActivity extends BaseActivity {
 		super.onClick(v);
 		switch (v.getId()) {
 		case R.id.text_invite:// 跳转到邀约界面
+			Intent intentInvite = new Intent(MainActivity.this, InviteActivity.class);
+			startActivity(intentInvite);
 			break;
 		case R.id.text_ceng:// 跳转到蹭饭界面
 			break;

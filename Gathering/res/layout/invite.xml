@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/title"/>"
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/invite_bg">
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:fillViewport="true"
+	    android:layout_marginTop="@dimen/dp30"
+	    android:paddingBottom="@dimen/dp30">
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:paddingLeft="@dimen/dp30"
+	    	android:paddingRight="@dimen/dp30">
+		    <ImageView 
+		        android:id="@+id/img_add"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/add"
+		        android:layout_centerHorizontal="true"/>
+		    <com.pot.gathering.view.MyGridView
+		        android:id="@+id/grid_invite"
+		       	android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:numColumns="4"
+		        android:listSelector="@color/transparent"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@id/img_add"
+		        android:horizontalSpacing="@dimen/dp10"
+		        android:verticalSpacing="@dimen/dp10"
+		        android:layout_marginTop="@dimen/dp10"/>
+		    
+		    <RelativeLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_below="@id/grid_invite"
+		        android:layout_marginTop="@dimen/dp20">
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:background="@drawable/paper_bg"
+		            android:orientation="vertical" 
+		            android:paddingLeft="@dimen/dp10"
+				    android:paddingRight="@dimen/dp10">
+
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/black"
+		                android:textSize="@dimen/middlesize"
+		                android:text="@string/theme"
+		                android:layout_marginTop="@dimen/dp30"/>
+		            
+		            <com.pot.gathering.view.MyGridView
+				        android:id="@+id/grid_theme"
+				       	android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:numColumns="3"
+				        android:listSelector="@color/transparent"
+				        android:layout_marginTop="@dimen/dp10"
+				        />
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/black"
+		                android:textSize="@dimen/middlesize"
+		                android:text="@string/address"
+		                android:layout_marginTop="@dimen/dp20"/>
+		            <EditText 
+		                android:id="@+id/edt_address"
+		                android:layout_width="match_parent"
+		              	android:layout_height="wrap_content"
+		              	android:textColor="@color/black"
+		              	android:textSize="@dimen/middlesize"
+		                android:hint="@string/address_edit"
+		                android:layout_marginTop="@dimen/dp10"
+		                android:background="@drawable/selector_edittext"
+		                android:padding="@dimen/dp10"/>
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textColor="@color/black"
+		                android:textSize="@dimen/middlesize"
+		                android:text="@string/game"
+		                android:layout_marginTop="@dimen/dp20"/>
+		            
+		            <com.pot.gathering.view.MyGridView
+				        android:id="@+id/grid_game"
+				       	android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:numColumns="3"
+				        android:listSelector="@color/transparent"
+				        android:stretchMode="columnWidth"
+				        android:layout_marginTop="@dimen/dp10"
+				        />
+		        </LinearLayout>
+		        
+		    </RelativeLayout>
+		</RelativeLayout>
+	</ScrollView>
+	</LinearLayout>
+</LinearLayout>

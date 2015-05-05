@@ -26,5 +26,9 @@
     <string name="contact">联系人</string>
     <string name="message">邀信</string>
     <string name="other">其他</string>
+    <string name="theme">标题</string>
+    <string name="address">地点</string>
+    <string name="address_edit">请输入聚会地址</string>
+    <string name="game">游戏项目</string>
 
 </resources>
