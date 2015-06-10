@@ -1,6 +1,7 @@
 package com.pot.gathering.activitys;
 
 import org.apache.http.Header;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,13 +15,11 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 import com.pot.gathering.BaseActivity;
 import com.pot.gathering.R;
-import com.pot.gathering.R.id;
-import com.pot.gathering.R.layout;
-import com.pot.gathering.R.string;
 import com.pot.gathering.config.Config;
 import com.pot.gathering.http.AsynHttpManager;
 
