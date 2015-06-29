@@ -77,6 +77,8 @@ public class MainActivity extends BaseActivity {
 		case R.id.text_ceng:// 跳转到蹭饭界面
 			break;
 		case R.id.text_contact:// 跳转到联系人界面
+			Intent intentContact = new Intent(MainActivity.this, ContactActivity.class);
+			startActivity(intentContact);
 			break;
 		case R.id.text_other:// 跳转到其他界面
 			break;

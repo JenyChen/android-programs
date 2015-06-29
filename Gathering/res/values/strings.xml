@@ -30,5 +30,10 @@
     <string name="address">地点</string>
     <string name="address_edit">请输入聚会地址</string>
     <string name="game">游戏项目</string>
+    <string name="name1">名称：</string>
+    <string name="nickname">昵称：</string>
+    <string name="phonenum1">手机号码：</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
 
 </resources>

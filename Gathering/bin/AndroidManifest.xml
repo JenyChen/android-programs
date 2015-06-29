@@ -32,6 +32,10 @@
         <activity 
             android:name="com.pot.gathering.activitys.InviteActivity"
             android:launchMode="singleTask"></activity>
+        
+        <activity 
+            android:name="com.pot.gathering.activitys.ContactActivity"
+            android:launchMode="singleTask"></activity>
     </application>
 
 </manifest>

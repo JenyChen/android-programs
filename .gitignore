@@ -96,3 +96,9 @@ Gathering/bin/dexedLibs/android-async-http-1.4.5-c8d8d133155aad765ea994c574bdeb5
 Gathering/bin/dexedLibs/android-support-v4-f4c2adda4332e7be254f7acadf465fab.jar
 Gathering/bin/Gathering.apk
 Gathering/bin/resources.ap_
+Gathering/bin/classes/com/pot/gathering/activitys/ContactActivity.class
+Gathering/bin/classes/com/pot/gathering/adapter/ContactAdapter$ViewHolder.class
+Gathering/bin/classes/com/pot/gathering/adapter/ContactAdapter.class
+Gathering/bin/classes/com/pot/gathering/Bean/ContactBean.class
+Gathering/bin/res/crunch/drawable-hdpi/contact_detail_bg.9.png
+Gathering/bin/res/crunch/drawable-hdpi/contact_list_title_bg.9.png
