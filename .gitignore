@@ -102,3 +102,5 @@ Gathering/bin/classes/com/pot/gathering/adapter/ContactAdapter.class
 Gathering/bin/classes/com/pot/gathering/Bean/ContactBean.class
 Gathering/bin/res/crunch/drawable-hdpi/contact_detail_bg.9.png
 Gathering/bin/res/crunch/drawable-hdpi/contact_list_title_bg.9.png
+Gathering/bin/classes/com/pot/gathering/tool/DeviceUuidFactory.class
+Gathering/bin/R.txt
