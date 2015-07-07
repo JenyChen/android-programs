@@ -98,16 +98,16 @@ public class BaseActivity extends Activity implements OnClickListener {
 	}
 
 	private void checkForCrashes() {
-		CrashManager.register(this, APP_ID);
+//		CrashManager.register(this, APP_ID);
 	}
 
 	private void checkForUpdates() {
 		// Remove this for store builds!
-		UpdateManager.register(this, APP_ID);
+//		UpdateManager.register(this, APP_ID);
 	}
 
 	private void unregisterManagers() {
-		UpdateManager.unregister();
+//		UpdateManager.unregister();
 		// unregister other managers if necessary...
 	}
 

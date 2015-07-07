@@ -1,9 +1,14 @@
 package com.pot.gathering.activitys;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.pot.gathering.BaseActivity;
 import com.pot.gathering.R;
@@ -20,9 +25,14 @@ import com.pot.gathering.adapter.ContactAdapter;
  */
 public class ContactActivity extends BaseActivity {
 
+	private TextView textName;
+	private TextView textNick;
+	private TextView textPhone;
+	private TextView textDelete;
+	private TextView textEdit;
 	private ListView mListView;
 	private ContactAdapter mAdapter;
-	private ArrayList<ContactBean> mArrayList;
+	private ArrayList<WeakReference<ContactBean>> mArrayList;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +44,12 @@ public class ContactActivity extends BaseActivity {
 		initObj();
 		
 		initView();
+		
+		initData();
 	}
 	
 	private void initObj(){
-		mArrayList = new ArrayList<ContactBean>();
+		mArrayList = new ArrayList<WeakReference<ContactBean>>();
 		prepareData();
 		mAdapter = new ContactAdapter(this, mArrayList);
 	}
@@ -48,8 +60,22 @@ public class ContactActivity extends BaseActivity {
 		
 		setTitle(true, getResources().getString(R.string.contact));
 		
+		textName 	= (TextView) findViewById(R.id.text_name);
+		textNick 	= (TextView) findViewById(R.id.text_nick_name);
+		textPhone 	= (TextView) findViewById(R.id.text_phonenum);
+		textDelete	= (TextView) findViewById(R.id.text_delete);
+		textEdit	= (TextView) findViewById(R.id.text_edit);
+		
 		mListView = (ListView) findViewById(R.id.listview_contact);
 		mListView.setAdapter(mAdapter);
+		
+		mListView.setOnItemClickListener(onItemClickListener);
+	}
+	
+	private void initData(){
+		if(mArrayList != null && mArrayList.size() > 0){
+			setDetailInfo(mArrayList.get(0).get());
+		}
 	}
 	
 	private void prepareData(){
@@ -62,7 +88,28 @@ public class ContactActivity extends BaseActivity {
 			}else{
 				bean.setTitle(false);
 			}
-			mArrayList.add(bean);
+			bean.setNickName("nikename--"+i);
+			bean.setPhoneNum("1597049341"+i);
+			WeakReference<ContactBean> wBean = new WeakReference(bean);
+			mArrayList.add(wBean);
 		}
 	}
+	
+	private void setDetailInfo(ContactBean bean){
+		if(bean != null){
+			textName.setText(bean.getName());
+			textNick.setText(bean.getNickName());
+			textPhone.setText(bean.getPhoneNum());
+		}
+	}
+	
+	private OnItemClickListener onItemClickListener = new OnItemClickListener() {
+
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position,
+				long id) {
+			// TODO Auto-generated method stub
+			setDetailInfo(mArrayList.get(position).get());
+		}
+	};
 }

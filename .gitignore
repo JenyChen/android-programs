@@ -104,3 +104,5 @@ Gathering/bin/res/crunch/drawable-hdpi/contact_detail_bg.9.png
 Gathering/bin/res/crunch/drawable-hdpi/contact_list_title_bg.9.png
 Gathering/bin/classes/com/pot/gathering/tool/DeviceUuidFactory.class
 Gathering/bin/R.txt
+Gathering/bin/classes/com/pot/gathering/activitys/ContactActivity$1.class
+Gathering/bin/dexedLibs/hockeysdk-android-09d68b6ba842621673ea9b31571479cf.jar

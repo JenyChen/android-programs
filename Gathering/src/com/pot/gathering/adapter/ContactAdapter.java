@@ -1,5 +1,6 @@
 package com.pot.gathering.adapter;
 
+import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 import android.content.Context;
@@ -14,11 +15,11 @@ import com.pot.gathering.Bean.ContactBean;
 
 public class ContactAdapter extends BaseAdapter {
 
-	private ArrayList<ContactBean> mArrayList;
+	private ArrayList<WeakReference<ContactBean>> mArrayList;
 	private LayoutInflater mInflater;
 	private Context mContext;
 	
-	public ContactAdapter(Context context, ArrayList<ContactBean> arrayList) {
+	public ContactAdapter(Context context, ArrayList<WeakReference<ContactBean>> arrayList) {
 		mArrayList = arrayList;
 		mInflater = LayoutInflater.from(context);
 		mContext = context;
@@ -55,7 +56,7 @@ public class ContactAdapter extends BaseAdapter {
 			viewH = (ViewHolder) convertView.getTag();
 		}
 		
-		ContactBean bean = mArrayList.get(position);
+		ContactBean bean = mArrayList.get(position).get();
 		if(bean != null){
 			if(bean.isTitle()){
 				viewH.textName.setBackgroundResource(R.drawable.contact_list_title_bg);
