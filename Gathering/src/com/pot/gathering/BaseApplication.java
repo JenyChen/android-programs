@@ -1,5 +1,7 @@
 package com.pot.gathering;
 
+import com.pot.gathering.database.DBHelper;
+
 import android.app.Application;
 import android.content.Context;
 import android.view.WindowManager;
@@ -13,7 +15,7 @@ public class BaseApplication extends Application {
 	public void onCreate() {
 		// TODO Auto-generated method stub
 		super.onCreate();
-		
+		new DBHelper(this);
 		getScreenWidth();
 	}
 	

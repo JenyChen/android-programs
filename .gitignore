@@ -106,3 +106,9 @@ Gathering/bin/classes/com/pot/gathering/tool/DeviceUuidFactory.class
 Gathering/bin/R.txt
 Gathering/bin/classes/com/pot/gathering/activitys/ContactActivity$1.class
 Gathering/bin/dexedLibs/hockeysdk-android-09d68b6ba842621673ea9b31571479cf.jar
+Gathering/bin/classes/com/pot/gathering/activitys/InviteInfoActivity.class
+Gathering/bin/classes/com/pot/gathering/database/DataBaseManager.class
+Gathering/bin/classes/com/pot/gathering/database/DBHelper.class
+Gathering/bin/classes/com/pot/gathering/utils/ViewHolder.class
+Gathering/bin/classes/com/pot/gathering/view/SiteSelectView$OnSelectListener.class
+Gathering/bin/classes/com/pot/gathering/view/SiteSelectView.class

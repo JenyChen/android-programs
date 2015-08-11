@@ -1,10 +1,9 @@
 package com.pot.gathering;
 
-import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.FeedbackManager;
-import net.hockeyapp.android.UpdateManager;
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -22,6 +21,9 @@ public class BaseActivity extends Activity implements OnClickListener {
 	private TextView textTitleLeft;
 	private DeviceUuidFactory mDeviceUuidFactory;
 	private String APP_ID;
+	
+	protected int screenWidth;
+	protected int screenHeight;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,12 @@ public class BaseActivity extends Activity implements OnClickListener {
 		mDeviceUuidFactory = new DeviceUuidFactory(this);
 		APP_ID = mDeviceUuidFactory.getDeviceUuid().toString();
 		checkForUpdates();
+		
+		DisplayMetrics dm = new DisplayMetrics();  
+		getWindowManager().getDefaultDisplay().getMetrics(dm);  
+		float density  = dm.density; 
+		screenWidth  = (int)(dm.widthPixels * density + 0.5f);      // 屏幕宽（px，如：480px）  
+		screenHeight = (int)(dm.heightPixels * density + 0.5f); 
 	}
 
 	/**
@@ -123,6 +131,17 @@ public class BaseActivity extends Activity implements OnClickListener {
 	public void showFeedbackActivity() {
 		FeedbackManager.register(this, APP_ID, null);
 		FeedbackManager.showFeedbackActivity(this);
+	}
+	
+	public void getScreenSize(){
+//		DisplayMetrics dm = new DisplayMetrics();  
+//		getWindowManager().getDefaultDisplay().getMetrics(dm);  
+//		float density  = dm.density; 
+//		screenWidth  = (int)(dm.widthPixels * density + 0.5f);      // 屏幕宽（px，如：480px）  
+//		screenHeight = (int)(dm.heightPixels * density + 0.5f);
+		
+		screenWidth = getWindowManager().getDefaultDisplay().getWidth();
+		screenHeight = getWindowManager().getDefaultDisplay().getHeight();
 	}
 
 }

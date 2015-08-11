@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.pot.gathering.R;
 import com.pot.gathering.Bean.InviteBean;
+import com.pot.gathering.utils.ViewHolder;
 import com.pot.gathering.view.CircleImageView;
 
 public class MyInviteGridAdapter extends BaseAdapter {
@@ -40,26 +41,27 @@ public class MyInviteGridAdapter extends BaseAdapter {
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
-		ViewHolder viewH = null;
+//		ViewHolder viewH = null;
 		if(convertView == null){
-			viewH = new ViewHolder();
+//			viewH = new ViewHolder();
 			convertView = (View) mInflater.inflate(R.layout.invite_item, null);
-			viewH.imgHead = (CircleImageView) convertView.findViewById(R.id.img_head);
-			viewH.textName = (TextView) convertView.findViewById(R.id.text_name);
-			convertView.setTag(viewH);
+//			viewH.imgHead = (CircleImageView) convertView.findViewById(R.id.img_head);
+//			viewH.textName = (TextView) convertView.findViewById(R.id.text_name);
+//			convertView.setTag(viewH);
 		}else{
-			viewH = (ViewHolder) convertView.getTag();
+//			viewH = (ViewHolder) convertView.getTag();
 		}
-		
+		CircleImageView imgHead = ViewHolder.get(convertView, R.id.img_head);
+		TextView textName = ViewHolder.get(convertView, R.id.text_name);
 		InviteBean bean = mArrayList.get(position);
 		if(bean != null){
-			viewH.textName.setText(bean.getName());
+			textName.setText(bean.getName());
 		}
 		return convertView;
 	}
 
-	class ViewHolder{
-		protected CircleImageView imgHead;
-		protected TextView textName;
-	}
+//	class ViewHolder{
+//		protected CircleImageView imgHead;
+//		protected TextView textName;
+//	}
 }

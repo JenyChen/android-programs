@@ -83,6 +83,8 @@ public class MainActivity extends BaseActivity {
 		case R.id.text_other:// 跳转到其他界面
 			break;
 		case R.id.layout_message:// 跳转到邀信界面
+			Intent intentInvited = new Intent(MainActivity.this, InviteInfoActivity.class);
+			startActivity(intentInvited);
 			break;
 		default:
 			break;

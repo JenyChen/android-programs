@@ -35,5 +35,9 @@
     <string name="phonenum1">手机号码：</string>
     <string name="edit">编辑</string>
     <string name="delete">删除</string>
+    <string name="invitor">邀请人：</string>
+    <string name="address1">地点：</string>
+    <string name="game1">游戏：</string>
+    <string name="site">位置：</string>
 
 </resources>

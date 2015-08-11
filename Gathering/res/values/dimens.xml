@@ -6,6 +6,7 @@
     
     <dimen name="maxsize">24sp</dimen>
     <dimen name="middlesize">20sp</dimen>
+    <dimen name="middlesize_18">18sp</dimen>
     <dimen name="minsize">16sp</dimen>
     <dimen name="minsize_12">12sp</dimen>
     <dimen name="minsize_8">8sp</dimen>

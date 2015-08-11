@@ -11,7 +11,7 @@ public class ContactBean {
 	private String phoneNum;// 手机号
 	private String nickName;// 昵称
 	private String imgUrl;
-	
+	private int sex;// 性别: 0表示男，1表示女
 	
 	public String getName() {
 		return name;
@@ -48,5 +48,11 @@ public class ContactBean {
 	}
 	public void setTitle(boolean isTitle) {
 		this.isTitle = isTitle;
+	}
+	public int getSex() {
+		return sex;
+	}
+	public void setSex(int sex) {
+		this.sex = sex;
 	}
 }
