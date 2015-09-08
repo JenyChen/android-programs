@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">团聚</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="title_name">团聚</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="phonenum">手机号</string>
+    <string name="password">密码</string>
+    <string name="name">姓名</string>
+    <string name="nick">昵称</string>
+    <string name="password_agin">密码确认</string>
+    <string name="sex">性别</string>
+    <string name="cancel">取消</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="sure">确定</string>
+    <string name="back">返回</string>
+    <string name="login_success">登录成功！</string>
+    <string name="login_failed">手机号或密码错误！</string>
+    <string name="invite">邀约</string>
+    <string name="inviteinfo">邀信</string>
+    <string name="ceng">蹭饭</string>
+    <string name="contact">联系人</string>
+    <string name="message">邀信</string>
+    <string name="other">其他</string>
+    <string name="theme">标题</string>
+    <string name="address">地点</string>
+    <string name="address_edit">请输入聚会地址</string>
+    <string name="game">游戏项目</string>
+    <string name="name1">名称：</string>
+    <string name="nickname">昵称：</string>
+    <string name="phonenum1">手机号码：</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="invitor">邀请人：</string>
+    <string name="invited">被邀人：</string>
+    <string name="address1">地点：</string>
+    <string name="game1">游戏：</string>
+    <string name="site">位置：</string>
+
+</resources>

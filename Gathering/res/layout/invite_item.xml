@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gridviewitem"
+    android:layout_height="@dimen/gridviewitem" 
+    android:background="@drawable/shadow_circle">
+    
+    <com.pot.gathering.view.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:background="@drawable/hand_error"/>
+    
+    <TextView 
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textSize="@dimen/minsize_12"
+    	android:textColor="@color/black"
+    	android:layout_below="@id/img_head"
+    	android:layout_centerHorizontal="true"/>
+</RelativeLayout>
