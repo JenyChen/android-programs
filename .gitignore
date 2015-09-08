@@ -112,3 +112,16 @@ Gathering/bin/classes/com/pot/gathering/database/DBHelper.class
 Gathering/bin/classes/com/pot/gathering/utils/ViewHolder.class
 Gathering/bin/classes/com/pot/gathering/view/SiteSelectView$OnSelectListener.class
 Gathering/bin/classes/com/pot/gathering/view/SiteSelectView.class
+Gathering/bin/classes/com/pot/gathering/adapter/MyImageGridAdapter.class
+Gathering/bin/classes/com/pot/gathering/adapter/MyTextGridAdapter.class
+Gathering/bin/classes/com/pot/gathering/bmobmanage/BmobManage.class
+Gathering/bin/classes/com/pot/gathering/config/Comment.class
+Gathering/bin/classes/com/pot/gathering/Manifest$permission.class
+Gathering/bin/classes/com/pot/gathering/Manifest.class
+Gathering/bin/classes/com/pot/gathering/messagemanage/inf/IReceiverMessage.class
+Gathering/bin/classes/com/pot/gathering/messagemanage/MyPushMessageReceiver.class
+Gathering/bin/dexedLibs/BmobSDK_V3.4.2_0727-8d0983f0c45b18e069650999b91718e2.jar
+Gathering/bin/dexedLibs/Bmob_Push_V0.6beta_20150408-090e76bec49dc96379a3d0a85673b490.jar
+Gathering/bin/res/crunch/drawable-hdpi/mj.png
+Gathering/bin/res/crunch/drawable-hdpi/pk.png
+Gathering/gen/com/pot/gathering/Manifest.java

@@ -22,6 +22,7 @@
     <string name="login_success">登录成功！</string>
     <string name="login_failed">手机号或密码错误！</string>
     <string name="invite">邀约</string>
+    <string name="inviteinfo">邀信</string>
     <string name="ceng">蹭饭</string>
     <string name="contact">联系人</string>
     <string name="message">邀信</string>
@@ -36,6 +37,7 @@
     <string name="edit">编辑</string>
     <string name="delete">删除</string>
     <string name="invitor">邀请人：</string>
+    <string name="invited">被邀人：</string>
     <string name="address1">地点：</string>
     <string name="game1">游戏：</string>
     <string name="site">位置：</string>

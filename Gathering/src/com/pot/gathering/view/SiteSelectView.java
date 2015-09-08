@@ -49,7 +49,7 @@ public class SiteSelectView extends View{
 		// TODO Auto-generated constructor stub
 	}
 	
-	interface OnSelectListener{
+	public interface OnSelectListener{
 		public void selecte(int position);
 	}
 	
@@ -112,12 +112,12 @@ public class SiteSelectView extends View{
 //					}
 //				}
 //			}
-			//已选位置
-			setSelectedPosition(paint, i);
 			
 			if(i == clickPosition){
 				paint.setColor(Color.BLUE);
 			}
+			//已选位置
+			setSelectedPosition(paint, i);
 			canvas.drawCircle(xr, yr, mRadioSmall, paint);
 			paint.setColor(Color.WHITE);
 			Map<String, Float> map = new HashMap<String, Float>();
@@ -129,7 +129,7 @@ public class SiteSelectView extends View{
 		Paint paintText = new Paint();
 		paintText.setColor(Color.RED);
 		paintText.setTextSize(50);
-		canvas.drawText("餐桌", mXCenter-45, mYCenter + 5, paintText);// x轴需要减去文本内容长度一般，y轴需要减去文本高度一半
+		canvas.drawText("餐桌", mXCenter-45, mYCenter + 15, paintText);// x轴需要减去文本内容长度一般，y轴需要减去文本高度一半
 		
 		
 	}

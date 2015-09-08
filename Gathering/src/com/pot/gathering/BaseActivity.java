@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.pot.gathering.config.Comment;
 import com.pot.gathering.tool.DeviceUuidFactory;
 
 public class BaseActivity extends Activity implements OnClickListener {
@@ -22,9 +23,6 @@ public class BaseActivity extends Activity implements OnClickListener {
 	private DeviceUuidFactory mDeviceUuidFactory;
 	private String APP_ID;
 	
-	protected int screenWidth;
-	protected int screenHeight;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -33,12 +31,6 @@ public class BaseActivity extends Activity implements OnClickListener {
 		mDeviceUuidFactory = new DeviceUuidFactory(this);
 		APP_ID = mDeviceUuidFactory.getDeviceUuid().toString();
 		checkForUpdates();
-		
-		DisplayMetrics dm = new DisplayMetrics();  
-		getWindowManager().getDefaultDisplay().getMetrics(dm);  
-		float density  = dm.density; 
-		screenWidth  = (int)(dm.widthPixels * density + 0.5f);      // 屏幕宽（px，如：480px）  
-		screenHeight = (int)(dm.heightPixels * density + 0.5f); 
 	}
 
 	/**
@@ -133,15 +125,4 @@ public class BaseActivity extends Activity implements OnClickListener {
 		FeedbackManager.showFeedbackActivity(this);
 	}
 	
-	public void getScreenSize(){
-//		DisplayMetrics dm = new DisplayMetrics();  
-//		getWindowManager().getDefaultDisplay().getMetrics(dm);  
-//		float density  = dm.density; 
-//		screenWidth  = (int)(dm.widthPixels * density + 0.5f);      // 屏幕宽（px，如：480px）  
-//		screenHeight = (int)(dm.heightPixels * density + 0.5f);
-		
-		screenWidth = getWindowManager().getDefaultDisplay().getWidth();
-		screenHeight = getWindowManager().getDefaultDisplay().getHeight();
-	}
-
 }

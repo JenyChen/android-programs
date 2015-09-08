@@ -16,6 +16,7 @@ import com.pot.gathering.BaseApplication;
 import com.pot.gathering.R;
 import com.pot.gathering.Bean.InviteBean;
 import com.pot.gathering.adapter.MyInviteGridAdapter;
+import com.pot.gathering.config.Comment;
 import com.pot.gathering.view.MyGridView;
 
 public class InviteActivity extends BaseActivity {
@@ -104,7 +105,7 @@ public class InviteActivity extends BaseActivity {
 	private void calculateGridViewWidth(GridView gridView, int count){
 		float itemWidth = getResources().getDimension(R.dimen.gridviewitem);
 		float itemSpace = getResources().getDimension(R.dimen.dp10);
-		int maxCount = (int) (BaseApplication.screenWidth/(itemWidth+itemSpace));
+		int maxCount = (int) (Comment.SCREEN_WIDTH/(itemWidth+itemSpace));
 		if(count > maxCount){
 			count = maxCount;
 		}
